@@ -24,3 +24,5 @@ const fictionalCharacter = {
 
 fictionalCharacter.messageWithTradionalFunction('With great power comes great responsability')
 fictionalCharacter.messageWithArrowFunction('Beware of Doctor Octopus')
+
+
