@@ -45,11 +45,17 @@ const password = prompt('Cual es tu contraseña?')
 function usuarioExistente(username,password){
     for(let i = 0; i < userDatabase.length; i++){
         if(userDatabase[i].username === username && userDatabase[i].password === password){
-            console.log('Es correcto')
-        } else {
-            console.log('No es correcto')
+            return true
         }
     }
+        return false
 }
 
-usuarioExistente(username,password)
+function signIn (username, password) {
+    if(usuarioExistente(username,password)){
+        alert(`Bienvenido a tu cuenta ${username}`)
+        console.log(userTimeline);
+    } else {
+        alert('Uuups, usuario o contraseña incorrectos')
+    }
+}
