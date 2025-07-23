@@ -79,6 +79,7 @@ async function createPost(title, content) {
   sendHTTPRequest("POST", "https://jsonplaceholder.typicode.com/posts", post);
 }
 
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const title = event.currentTarget.querySelector("#title").value;
